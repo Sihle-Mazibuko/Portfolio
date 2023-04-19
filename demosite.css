@@ -1,0 +1,150 @@
+* {
+  font-family: sans-serif;
+}
+
+.demo-container {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+  background: linear-gradient(45deg, red, blue, purple, orange, green);
+  background-size: 250% 250%;
+  animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.demo-container .demo-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.demo-logo {
+  width: 70px;
+  margin-left: 20px;
+}
+
+.demo-nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.demo-nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 40px;
+}
+.demo-nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.demo-nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  transition: width 0.3s;
+}
+
+.demo-nav ul li a:hover::after {
+  width: 75%;
+}
+
+.demo-text-box {
+  color: #fff;
+  position: absolute;
+  bottom: 8%;
+}
+
+.demo-text-box p {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.demo-text-box h1 {
+  font-size: 80px;
+  line-height: 20px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url(/images/stripes.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.demo-text-box h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.demo-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.demo-row a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 50px;
+  border: 2px solid white;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.demo-row span {
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+
+.demo-social-media {
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+}
+
+.demo-social-media a {
+  width: 80px;
+  display: block;
+  margin: 25px 5px;
+  color: white;
+}
+
+.demo-social-media a:hover {
+  color: black;
+}
