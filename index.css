@@ -112,8 +112,8 @@ section {
   font-weight: 600;
 }
 
-.home-text h5 {
-  margin-bottom: 23px;
+.home-text h2 {
+  margin-bottom: 10px;
   font-size: 12px;
   font-weight: 400;
 }
@@ -121,13 +121,13 @@ section {
 .home-text h3 {
   font-size: 15px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .home-text p {
   font-size: 15px;
   line-height: 28px;
-  margin-bottom: 20px;
-  color: black;
+  margin-bottom: 15px;
 }
 
 .social a {
@@ -198,9 +198,9 @@ header.sticky {
   margin-bottom: 20px;
 }
 
-.sub-box h3 {
+.sub-box h1 {
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -210,7 +210,7 @@ header.sticky {
   line-height: 20px;
 }
 
-.design-text h3 {
+.design-text h2 {
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 600;
@@ -260,7 +260,7 @@ header.sticky {
   line-height: 1.1;
 }
 
-.profile-text h3 {
+.profile-text h1 {
   font-size: 20px;
   font-weight: 500;
 }
@@ -283,7 +283,7 @@ header.sticky {
   line-height: 1.1;
 }
 
-.heading h3 {
+.heading h1 {
   font-size: 15;
   font-weight: 500;
 }
@@ -348,7 +348,7 @@ header.sticky {
   opacity: 1;
 }
 
-.layer h5 {
+.layer h4 {
   position: absolute;
   width: 100%;
   font-size: 15px;
@@ -361,7 +361,7 @@ header.sticky {
   transition: all 0.3s;
 }
 
-.layer:hover h5 {
+.layer:hover h4 {
   bottom: 40%;
   opacity: 1;
 }
