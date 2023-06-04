@@ -284,12 +284,12 @@ header.sticky {
 }
 
 .heading h1 {
-  font-size: 15;
+  font-size: 30px;
   font-weight: 500;
 }
 
 .heading p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -364,43 +364,6 @@ header.sticky {
 .layer:hover h4 {
   bottom: 40%;
   opacity: 1;
-}
-
-.blog-content {
-  display: table-row;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-  grid-gap: 32px;
-  align-items: center;
-  margin-top: 80px;
-  /* text-align: center; */
-}
-
-.row {
-  background: wheat;
-  box-shadow: 18px 0 87px 0 rgb(10 15 70 /7%);
-  border-radius: 12px;
-  padding: 45px 45px 45px 45px;
-  transition: ease 0.45s;
-  cursor: pointer;
-}
-
-.row h3 {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.row p {
-  font-size: 12px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  line-height: 20px;
-}
-
-.row:hover {
-  will-change: transform;
-  transform: perspective(1000px) rotateX(1deg) rotateY(1deg)
-    scale3d(1.05, 1.05, 1.05);
 }
 
 .out {
@@ -501,4 +464,59 @@ header.sticky {
     padding: 65% 3%;
     transition: 0.3s;
   }
+}
+
+/* .blogs-container {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.blogs-container {
+  display: inline-block;
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 32px;
+  align-items: center;
+  text-align: center; */
+}
+
+.post-box {
+  background-color: wheat;
+  box-shadow: 0 4px 14px hsl(355deg 25% 15%/10%);
+  margin: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: ease 0.45s;
+}
+
+.post-box:hover {
+  will-change: transform;
+  transform: perspective(1000px) rotateX(1deg) rotateY(1deg)
+    scale3d(1.05, 1.05, 1.05);
+}
+
+.Week {
+  padding: 20px;
+}
+
+.Week a {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: black;
+}
+
+.post-week {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.post-box p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 5px 0 10px;
 }
