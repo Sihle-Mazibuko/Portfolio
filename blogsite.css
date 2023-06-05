@@ -1,0 +1,118 @@
+.tab-container {
+  position: relative;
+  margin: 0 80px;
+  transition: 0.5s ease;
+}
+
+.tab-menu {
+  max-width: 800px;
+  list-style: none;
+  padding: 10px;
+  white-space: nowrap;
+  border-bottom: 1px solid gray;
+  border-radius: 50px;
+  box-shadow: 0 5px 25px wheat;
+  background: whitesmoke;
+  overflow-x: auto;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+.tab-menu::-webkit-scrollbar {
+  display: none;
+}
+.tab-nav-bar {
+  position: relative;
+  margin: 5px 10px 40px 10px;
+}
+
+.tab-navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.tab-btn {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin: 0 1px;
+  padding: 10px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: rgba(245, 222, 179, 0.734);
+}
+
+.tab-btn.active {
+  background-color: wheat;
+}
+
+.left-btn,
+.right-btn {
+  position: absolute;
+  font-size: 1rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.left-btn {
+  left: 0;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  display: none;
+}
+.right-btn {
+  right: 0;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+#tab-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tab {
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: auto;
+  max-width: 1100px;
+  padding: 15px 50px;
+  transform: translateX(25px);
+  content-visibility: hidden;
+}
+
+.tab.active {
+  transform: translateX(0);
+  content-visibility: visible;
+}
+
+.tab .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 30px;
+}
+
+.week,
+.info,
+.description p {
+  padding-top: 20px;
+}
+
+.week h1,
+.info h2 {
+  font-size: 1.5rem;
+}

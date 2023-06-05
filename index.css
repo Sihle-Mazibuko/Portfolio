@@ -294,6 +294,10 @@ header.sticky {
   line-height: 20px;
 }
 
+.heading a {
+  margin-bottom: 50px;
+}
+
 .portfolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -396,6 +400,15 @@ header.sticky {
   letter-spacing: 1px;
   opacity: 0.4;
   color: rgb(0, 0, 0);
+}
+
+.reference {
+  font-size: 0.9rem;
+}
+
+.reference a {
+  color: gray;
+  text-decoration: underline;
 }
 
 @media (max-width: 1425px) {
@@ -526,35 +539,25 @@ header.sticky {
 }
 
 .Week {
-  padding: 20px;
+  padding: 15px;
 }
 
 .Week a {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: underline;
-  color: black;
+  color: rgba(0, 0, 0, 0.633);
 }
 
 .blog-week {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: 5px;
 }
 
 .blog-box p {
   font-size: 16px;
   line-height: 24px;
   margin: 5px 0 10px;
-}
-
-.reference {
-  font-size: 0.9rem;
-}
-
-.reference a {
-  color: gray;
-  text-decoration: underline;
 }
