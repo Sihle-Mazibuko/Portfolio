@@ -46,13 +46,13 @@ window.onresize = function () {
 const tabs = document.querySelectorAll(".tab");
 const tabBtns = document.querySelectorAll(".tab-btn");
 
-const tabNav = function (tabBtnClick) {
+const tabNavigation = function (tabBtnClick) {
   tabBtns.forEach((tabBtn) => {
     tabBtn.classList.remove("active");
   });
 
   tabs.forEach((tab) => {
-    tab.classList.remove("remove");
+    tab.classList.remove("active");
   });
 
   tabBtns[tabBtnClick].classList.add("active");
@@ -61,6 +61,6 @@ const tabNav = function (tabBtnClick) {
 
 tabBtns.forEach((tabBtn, i) => {
   tabBtn.addEventListener("click", () => {
-    tabNav(i);
+    tabNavigation(i);
   });
 });

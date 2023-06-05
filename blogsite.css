@@ -90,11 +90,14 @@
   padding: 15px 50px;
   transform: translateX(25px);
   content-visibility: hidden;
+  opacity: 0;
 }
 
 .tab.active {
   transform: translateX(0);
   content-visibility: visible;
+  opacity: 1;
+  transition: 0.8s ease;
 }
 
 .tab .row {
@@ -115,4 +118,22 @@
 .week h1,
 .info h2 {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+  section {
+    margin: 0 0px;
+  }
+
+  .tab-nav-bar {
+    margin: 65px 20px 40px 25px;
+  }
+
+  .tab {
+    padding: 15px 25px;
+  }
+
+  .tab .row {
+    flex-direction: column;
+  }
 }
