@@ -87,6 +87,7 @@ header {
   background: wheat;
   border: 2px solid black;
   color: black;
+  padding: 3px;
 }
 
 section {
@@ -107,20 +108,20 @@ section {
 
 .home-text h1 {
   margin: 10px 0 20px;
-  font-size: 60px;
+  font-size: 63px;
   line-height: 1;
   font-weight: 600;
 }
 
 .home-text h2 {
   margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .home-text h3 {
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 
@@ -128,6 +129,7 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 15px;
+  font-weight: 300;
 }
 
 .social a {
@@ -200,31 +202,31 @@ header.sticky {
 
 .sub-box h1 {
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .sub-box p {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(0, 0, 0, 0.662);
   line-height: 20px;
 }
 
 .design-text h2 {
   margin-bottom: 15px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .paragraphs p {
-  font-size: 15px;
+  font-size: 17px;
   color: rgba(0, 0, 0, 0.662);
   line-height: 20px;
   margin-bottom: 15px;
 }
 
 .paragraphs span {
-  font-size: 15px;
+  font-size: 17px;
   color: rgba(0, 0, 0, 0.662);
   line-height: 20px;
   margin-bottom: 15px;
@@ -252,22 +254,21 @@ header.sticky {
   width: 540px;
   height: auto;
 }
+.profile-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
 
 .profile-text h2 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   margin: 8px 0 25px;
   line-height: 1.1;
 }
 
-.profile-text h1 {
-  font-size: 20px;
-  font-weight: 500;
-}
-
 .profile-text p {
   max-width: 550px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
   margin-bottom: 45px;
 }
@@ -278,7 +279,7 @@ header.sticky {
 
 .heading h2 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
   margin: 7px 0 20px;
   line-height: 1.1;
 }
@@ -366,6 +367,25 @@ header.sticky {
   opacity: 1;
 }
 
+#view-essay {
+  font-size: 15px;
+  color: black;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.essay p {
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+
+.essay p a {
+  padding-bottom: 30px;
+  font-weight: 500;
+  color: black;
+  text-decoration: underline;
+}
+
 .out {
   text-align: center;
   padding: 20px;
@@ -391,15 +411,20 @@ header.sticky {
     padding: 70px 3%;
     transition: 0.3s;
   }
+
+  .blogs-container {
+    margin: 0 auto;
+    width: 95%;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   #menu-icon {
     display: block;
   }
 
   .home {
-    min-height: 80vh;
+    min-height: 30vh;
   }
 
   .navlist {
@@ -432,6 +457,17 @@ header.sticky {
   .navlist.active {
     top: 100%;
   }
+
+  section {
+    padding: 50% 7%;
+    transition: 0.3s;
+  }
+
+  .blogs-container {
+    margin: auto;
+    width: 92%;
+    grid-gap: 1px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -461,36 +497,29 @@ header.sticky {
     margin: 30px;
   }
   section {
-    padding: 65% 3%;
+    padding: 40% 10%;
     transition: 0.3s;
   }
 }
 
-/* .blogs-container {
-  display: grid;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .blogs-container {
-  display: inline-block;
-  /* grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-  grid-gap: 32px;
-  align-items: center;
-  text-align: center; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  gap: 110px;
 }
 
-.post-box {
+.blog-box {
+  width: 350px;
   background-color: wheat;
-  box-shadow: 0 4px 14px hsl(355deg 25% 15%/10%);
-  margin: 30px;
-  padding: 10px;
-  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  border-radius: 20px;
+  padding: 20px 20px;
   text-align: center;
   transition: ease 0.45s;
 }
 
-.post-box:hover {
+.blog-box:hover {
   will-change: transform;
   transform: perspective(1000px) rotateX(1deg) rotateY(1deg)
     scale3d(1.05, 1.05, 1.05);
@@ -508,15 +537,19 @@ header.sticky {
   color: black;
 }
 
-.post-week {
+.blog-week {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 500;
   margin-top: 5px;
 }
 
-.post-box p {
+.blog-box p {
   font-size: 16px;
   line-height: 24px;
   margin: 5px 0 10px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
