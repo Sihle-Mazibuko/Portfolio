@@ -57,20 +57,23 @@
     <main>
       <section class="home" id="home">
         <div class="home-text">
-          <h2>Hi, My Name Is</h2>
-          <h1 class="h-card p-name">Sihle Mazibuko</h1>
-          <h3>An aspiring creative desginer</h3>
-          <p>
-            Welcome to my website, where creative <br />
-            excellence meets technological brilliance
-          </p>
-          <div class="social">
+          <hgroup>
+            <h2>Hi, My Name Is</h2>
+            <h1 class="h-card p-name">Sihle Mazibuko</h1>
+            <h3>An aspiring creative desginer</h3>
+            <p>
+              Welcome to my website, where creative <br />
+              excellence meets technological brilliance
+            </p>
+          </hgroup>
+
+          <address class="social">
             <a class="u-email" href="mailto:sihlemazii@gmail.com"
               ><i class="bx bx-envelope"></i></a
             ><a href="https://www.instagram.com/sihle.jpeg/"
               ><i class="bx bxl-instagram"></i
             ></a>
-          </div>
+          </address>
           <a href="#profile" class="btn">About Me</a>
         </div>
 
@@ -110,17 +113,17 @@
           <h2>Interactive Design Process</h2>
           <div class="paragraphs">
             <p>
-              The main goal when desinging this website was to creative a simple
-              and fully comprehendable website, that proves efficent information
-              without clouding the viewing with numerous amounts of content that
-              they may not even know how to use and understand
+              The main goal when designing this website was to create a simple
+              and fully comprehendible website, that proves efficient
+              information without clouding the viewing with numerous amounts of
+              content that they may not even know how to use and understand.
             </p>
             <p>
               The website has a single page, making it easy to flow through its
               numerous sections by scrolling down or using the functional
-              buttons allowed at the top of the screen. This enforces two basic
-              and evidently the same laws of navigating the website ensuring a
-              user will not get lost when interacting with the website.
+              buttons allowed at the top of the screen. This enforces two laws
+              of navigating the website that ensure a user will not get lost
+              when interacting with the elements.
             </p>
             <p>The website contains the following interface elements.</p>
             <p>
@@ -131,14 +134,14 @@
             </p>
             <p>
               <span>Dropdowns:</span> When scrolling down the website the header
-              turns into a drop down that is always present at the top of the
+              turns into a drop-down that is always present at the top of the
               site displaying the navigation buttons of the website. On smaller
-              screens navigation buttons are hidden and only the toggle dropdown
-              is visible.
+              screens, navigation buttons are hidden and only the toggle
+              dropdown is visible.
             </p>
             <p>
               <span>Icons: </span> The only icons present in the website are the
-              social media links and the drop down bar icon
+              social media links and the drop down bar icon.
             </p>
             <p>
               The use of minimalistic interface elements is to give firstly a
@@ -149,25 +152,45 @@
             <p>The aim is to create a minimalistic website</p>
             <p>
               The use of a small range of colours (black #000000, white #FFFFFF,
-              wheat #F5DEB3, whitesmoke #F5F5F5 and sandy brown #F4A460) help
-              with this as the two none shades go well with one another being of
-              similar shades and smokewhite adds a different feel from the
-              ever-present white
+              wheat #F5DEB3, whitesmoke #F5F5F5, gray #808080 and sandy brown
+              #F4A460) help with this as the two none shades go well with one
+              another being of similar shades and smokewhite adds a different
+              feel from the ever-present white. The gray acts as sort of a glue
+              in the essay page as it can give a break from viewing either the
+              black text or whitesmoke background for too long. The sans-serif
+              font, namely Helvetica, is used throughout all text elements found
+              in the website as sans-serifs are considered to be one most the
+              least eye-straining and most legible fonts.
             </p>
             <h3>Implementation notes</h3>
             <p>
               The arrangement of the content of the website follws the logic of
               seperating concerns, through putting things that are related to
-              one another together
+              one another together.
             </p>
             <p>
               <span>Semantics</span> used are relevant to the content their
-              display, as seen through the effecient use of "p tags" in this
-              design section
+              display, as seen through the effecient use of in this design
+              section and also reducing the amount of divs used and sticking to
+              <abbr title="Hypertext Markup Language">HTML</abbr> semantics.
             </p>
             <p>
-              There is no CSS or JavaScript in-line scripting as there is
-              relevant linking to each necessary document
+              There is no <abbr title="Cascading Style Sheet">CSS</abbr> or
+              <abbr title="JavaScript">JS</abbr> in-line scripting as there is
+              relevant linking to each necessary document.
+            </p>
+            <h3>References</h3>
+            <p class="reference">
+              Osman, M. (2023).
+              <cite class="cite">
+                The Ultimate List of Web-Safe HTML and CSS Fonts.</cite
+              >
+              [online] blog.hubspot.com. Available at:
+              <a
+                href="https://blog.hubspot.com/website/web-safe-html-css-fonts"
+                class="u-url"
+                >https://blog.hubspot.com/website/web-safe-html-css-fonts</a
+              >.
             </p>
           </div>
         </div>
@@ -179,8 +202,10 @@
         </div>
 
         <article class="profile-text">
-          <h1>I am an aspiring digital artist</h1>
-          <h2>Currently completing a degree in Digital Arts</h2>
+          <hgroup>
+            <h1>I am an aspiring digital artist</h1>
+            <h2>Currently completing a degree in Digital Arts</h2>
+          </hgroup>
           <p>
             Some of my skill include game designing, asset creation for digital
             projects, website design (and a bit of development)
@@ -190,89 +215,95 @@
       </section>
 
       <section class="portfolio" id="portfolio">
-        <div class="heading">
+        <hgroup class="heading">
           <h1>Portfolio</h1>
           <h2>
             These are some of my proudest achievements throughout this journey
             of being a creative
           </h2>
-        </div>
+        </hgroup>
 
         <div class="portfolio-content">
-          <div class="col">
+          <figure class="col">
             <img
               src="PORTFOLIO WIREFRAME.jpg"
               alt="Portfolio section wireframe"
             />
-            <div class="layer">
+            <figcaption class="layer">
               <h3>Website design</h3>
               <h4>Wireframing</h4>
-            </div>
-          </div>
-          <div class="col">
+            </figcaption>
+          </figure>
+          <figure class="col">
             <img src="RIG SC.png" alt="Screenshot of asset created" />
-            <div class="layer">
+            <figcaption class="layer">
               <h3>Asset creation</h3>
               <h4>A rig of a human character asset in blender</h4>
-            </div>
-          </div>
-          <div class="col">
+            </figcaption>
+          </figure>
+          <figure class="col">
             <img src="DONUT.png" alt="Screenshot of asset created" />
-            <div class="layer">
+            <figcaption class="layer">
               <h3>Asset creation</h3>
               <h4>A donut in blender</h4>
-            </div>
-          </div>
-          <div class="col">
+            </figcaption>
+          </figure>
+          <figure class="col">
             <img src="SHOOTER SC.png" alt="Screenshot of game created" />
-            <div class="layer">
+            <figcaption class="layer">
               <h3>Game design</h3>
               <h4>A first person shooter game</h4>
-            </div>
-          </div>
-          <div class="col">
+            </figcaption>
+          </figure>
+          <figure class="col">
             <img src="CUPS.png" alt="Screenshot of asset created" />
-            <div class="layer">
+            <figcaption class="layer">
               <h3>Asset creation</h3>
               <h4>Cups made in blender</h4>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
 
-          <div class="col">
+          <figure class="col">
             <img src="SOLITAIRE SC.png" alt="Screenshot of game created" />
-            <div class="layer">
+            <figcaption class="layer">
               <h3>Game design</h3>
               <h4>Solitaire</h4>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="blogs-section" id="blogs-section" class="h-entry">
-        <div class="heading">
+        <hgroup class="heading">
           <h1>Blogs</h1>
           <h2>
             These are my thoughts through this journey of me designing this
             website
           </h2>
-        </div>
+        </hgroup>
 
         <div class="blogs-container">
           <div class="blog-box">
             <h3 class="Week u-url"><a href="blogs.html">Week 1</a></h3>
-            <span class="blog-week dt-published">(21 Feb - 24 Feb 2023)</span>
+            <span class="blog-week dt-published"
+              >(21 February - 24 February 2023)</span
+            >
             <p>
-              Recaping setting up Github, As We May think by Vannevar Bush and
+              Recaping setting up GitHub, As We May think by Vannevar Bush and
               my goals for this course.
             </p>
           </div>
 
           <div class="blog-box">
             <h3 class="Week u-url"><a href="blogs.html">Week 2</a></h3>
-            <span class="blog-week dt-published">(27 Feb - 3 March 2023)</span>
+            <span class="blog-week dt-published"
+              >(27 February - 3 March 2023)</span
+            >
             <p>
-              Experience with HTML, Internet histories reading and Lawson and
-              Bruce's Why You Should Choose HTML5.
+              Experience with
+              <abbr title="Hypertext Markup Language">HTML</abbr>, Internet
+              histories reading and Lawson and Bruce's Why You Should Choose
+              <abbr title="Hypertext Markup Language Five">HTML5</abbr>.
             </p>
           </div>
 
@@ -282,7 +313,8 @@
               >(6 March - 10 March 2023)</span
             >
             <p>
-              Experience with CSS and Steve Mailloux's COnvention and Context.
+              Experience with <abbr title="Cascading Style Sheet">CSS</abbr> and
+              Steve Mailloux's Convention and Context.
             </p>
           </div>
 
@@ -331,8 +363,9 @@
               >(24 April - 28 April 2023)</span
             >
             <p>
-              Website development, CSS tips and Laura Robinson's Digital
-              Inequalities and why they matter.
+              Website development,
+              <abbr title="Cascading Style Sheets">CSS</abbr> tips and Laura
+              Robinson's Digital Inequalities and why they matter.
             </p>
           </div>
 
@@ -340,8 +373,10 @@
             <h3 class="Week u-url"><a href="blogs.html">Week 10</a></h3>
             <span class="blog-week dt-published">(2 May - 5 May 2023)</span>
             <p>
-              Working with grids in CSS, JavaScript implementation, The Road To
-              Technocolonialism and Towards decolonising computational sciences.
+              Working with grids in
+              <abbr title="Cascading Style Sheets">CSS</abbr>, JavaScript
+              implementation, The Road To Technocolonialism and Towards
+              decolonising computational sciences.
             </p>
           </div>
 
@@ -364,7 +399,8 @@
             <h3 class="Week u-url"><a href="blogs.html">Week 13</a></h3>
             <span class="blog-week dt-published">(22 May - 26 May 2023)</span>
             <p>
-              Website development process, further reflections on APIs and
+              Website development process, further reflections on
+              <abbr title="Application Programming Interfaces">APIs</abbr> and
               Internet Society and design Justice.
             </p>
           </div>
