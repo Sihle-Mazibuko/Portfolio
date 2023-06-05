@@ -400,7 +400,7 @@ header.sticky {
 
 @media (max-width: 1425px) {
   header {
-    padding: 16px 3%;
+    padding: 16px 5%;
     transition: 0.2s;
   }
   .header.sticky {
@@ -418,7 +418,7 @@ header.sticky {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #menu-icon {
     display: block;
   }
