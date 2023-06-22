@@ -27,3 +27,9 @@ function GoToBlogs() {
     "https://sihle-mazibuko.github.io/Portfolio/essay.html"
   );
 }
+
+const backToTop = document.querySelector("logo");
+
+backToTop.addEventListener("scroll", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

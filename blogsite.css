@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .tab-container {
   position: relative;
   margin: 0 80px;
@@ -115,8 +118,8 @@
   padding-top: 20px;
 }
 
-.week h1,
-.info h2 {
+.week h2,
+.info h3 {
   font-size: 1.5rem;
 }
 

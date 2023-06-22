@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   font-family: Arial, Helvetica, sans-serif;
   background-color: whitesmoke;
