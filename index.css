@@ -200,7 +200,7 @@ header.sticky {
   margin-bottom: 20px;
 }
 
-.sub-box h1 {
+.sub-box h2 {
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: 600;
@@ -254,12 +254,12 @@ header.sticky {
   width: 540px;
   height: auto;
 }
-.profile-text h1 {
+.profile-text h2 {
   font-size: 32px;
   font-weight: 700;
 }
 
-.profile-text h2 {
+.profile-text h3 {
   font-size: 20px;
   font-weight: 400;
   margin: 8px 0 25px;
@@ -277,14 +277,14 @@ header.sticky {
   text-align: center;
 }
 
-.heading h2 {
+.heading h3 {
   font-size: 18px;
   font-weight: 300;
   margin: 7px 0 20px;
   line-height: 1.1;
 }
 
-.heading h1 {
+.heading h2 {
   font-size: 30px;
   font-weight: 500;
 }
