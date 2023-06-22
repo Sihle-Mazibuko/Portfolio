@@ -4,15 +4,26 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
+const menu = document.querySelector("#menu-icon");
+const navList = document.querySelector(".navlist");
 
 menu.onclick = () => {
   menu.classList.toggle("bx-x");
-  navlist.classList.toggle("active");
+  navList.classList.toggle("active");
 };
 
 window.onscroll = () => {
   menu.classList.remove("bx-x");
-  navlist.classList.remove("active");
+  navList.classList.remove("active");
 };
+
+const blogPageLink = document.querySelector("blogs-page");
+const essayPageLink = document.querySelector("essays-page");
+
+blogPageLink.addEventListener("click", () => GoToBlogs());
+
+function GoToBlogs() {
+  window.location.replace(
+    "https://sihle-mazibuko.github.io/Portfolio/essay.html"
+  );
+}

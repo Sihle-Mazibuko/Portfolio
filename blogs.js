@@ -1,6 +1,7 @@
 const btnLeft = document.querySelector(".left-btn");
 const btnRight = document.querySelector(".right-btn");
 const tabMenu = document.querySelector(".tab-menu");
+
 const iconVisibility = () => {
   let scrollLeftValue = Math.ceil(tabMenu.scrollLeft);
   let scrollableWidth = tabMenu.scrollWidth - tabMenu.clientWidth;
