@@ -17,7 +17,6 @@ window.onscroll = () => {
   navList.classList.remove("active");
 };
 
-const blogPageLink = document.querySelector("blogs-page");
 const essayPageLink = document.querySelector("essays-page");
 
 blogPageLink.addEventListener("click", () => GoToBlogs());

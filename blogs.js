@@ -65,9 +65,3 @@ tabBtns.forEach((tabBtn, i) => {
     tabNavigation(i);
   });
 });
-
-const backToTop = document.querySelector("logo");
-
-backToTop.addEventListener("scroll", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
