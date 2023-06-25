@@ -17,13 +17,20 @@ window.onscroll = () => {
   navList.classList.remove("active");
 };
 
-const blogBox = document.querySelector("box");
+const superbalistEssay = document.querySelector("box-s");
+const aiEssay = document.querySelector("box-ai");
 
-blogBox.addEventListener("click", () => GoToBlogs());
+superbalistEssay.addEventListener("click", () => GoToEssayOne());
+aiEssay.addEventListener("click", () => GoToEssayTWo());
 
-function GoToBlogs() {
+function GoToEssayOne() {
   window.location.replace(
     "https://sihle-mazibuko.github.io/Portfolio/essay.html"
+  );
+}
+function GoToEssayTWo() {
+  window.location.replace(
+    "https://sihle-mazibuko.github.io/Portfolio/secondessay.html"
   );
 }
 
