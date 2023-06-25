@@ -23,6 +23,7 @@ const blogBox = document.querySelector(".blog-box");
 
 superbalistEssay.addEventListener("click", () => GoToEssayOne());
 aiEssay.addEventListener("click", () => GoToEssayTWo());
+blogBox.addEventListener("click", () => Blogs());
 
 function GoToEssayOne() {
   window.location.replace(
