@@ -305,7 +305,6 @@ header.sticky {
   align-items: center;
   margin-top: 80px;
   text-align: center;
-  cursor: pointer;
 }
 
 .col {
@@ -514,6 +513,7 @@ header.sticky {
 }
 
 .blog-box:hover {
+  cursor: pointer;
   will-change: transform;
   transform: perspective(1000px) rotateX(1deg) rotateY(1deg)
     scale3d(1.05, 1.05, 1.05);
@@ -569,6 +569,7 @@ header.sticky {
   padding: 1.3rem 1.3rem;
   box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
   text-align: center;
+  cursor: pointer;
 }
 
 .topic h3 {

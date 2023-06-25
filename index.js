@@ -17,8 +17,9 @@ window.onscroll = () => {
   navList.classList.remove("active");
 };
 
-const superbalistEssay = document.querySelector("box-s");
-const aiEssay = document.querySelector("box-ai");
+const superbalistEssay = document.querySelector("#Superbalist");
+const aiEssay = document.querySelector("#AI");
+const blogBox = document.querySelector(".blog-box");
 
 superbalistEssay.addEventListener("click", () => GoToEssayOne());
 aiEssay.addEventListener("click", () => GoToEssayTWo());
@@ -26,6 +27,11 @@ aiEssay.addEventListener("click", () => GoToEssayTWo());
 function GoToEssayOne() {
   window.location.replace(
     "https://sihle-mazibuko.github.io/Portfolio/essay.html"
+  );
+}
+function Blogs() {
+  window.location.replace(
+    "https://sihle-mazibuko.github.io/Portfolio/blogpages.html"
   );
 }
 function GoToEssayTWo() {
