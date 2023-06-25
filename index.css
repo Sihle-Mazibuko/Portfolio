@@ -371,25 +371,6 @@ header.sticky {
   opacity: 1;
 }
 
-#view-essay {
-  font-size: 15px;
-  color: black;
-  text-decoration: underline;
-  font-weight: 700;
-}
-
-.essay p {
-  padding-bottom: 30px;
-  font-weight: 300;
-}
-
-.essay p a {
-  padding-bottom: 30px;
-  font-weight: 500;
-  color: black;
-  text-decoration: underline;
-}
-
 .out {
   text-align: center;
   padding: 20px;
@@ -560,4 +541,45 @@ header.sticky {
   font-size: 16px;
   line-height: 24px;
   margin: 5px 0 10px;
+}
+
+#essay h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.topics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.box {
+  position: inherit;
+  flex: 1 1 33rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.topic {
+  background-color: wheat;
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  border-radius: 0.5rem;
+  padding: 1.3rem 1.3rem;
+  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.topic h3 {
+  font-size: 1.5rem;
+}
+
+.topic a {
+  color: gray;
+  text-decoration: underline;
+}
+
+.topic p {
+  margin: 20px;
 }

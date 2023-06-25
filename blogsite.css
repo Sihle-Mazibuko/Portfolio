@@ -39,8 +39,14 @@
 }
 
 .info h3,
-.info .content p {
+.info .content p,
+.info .content h4 {
   margin-bottom: 20px;
+}
+
+.info .content p {
+  text-transform: none;
+  font-size: 1rem;
 }
 
 .week h2 {
@@ -48,4 +54,10 @@
   margin-bottom: 30px;
   text-align: center;
   text-transform: capitalize;
+}
+
+cite {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: none;
 }
