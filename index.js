@@ -17,13 +17,13 @@ window.onscroll = () => {
   navList.classList.remove("active");
 };
 
-const essayPageLink = document.querySelector("essays-page");
+const blogBox = document.querySelector(".blog-box");
 
-blogPageLink.addEventListener("click", () => GoToBlogs());
+blogContainer.addEventListener("click", () => GoToBlogs());
 
 function GoToBlogs() {
   window.location.replace(
-    "https://sihle-mazibuko.github.io/Portfolio/essay.html"
+    "https://sihle-mazibuko.github.io/Portfolio/blogpages.html"
   );
 }
 
