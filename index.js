@@ -19,7 +19,7 @@ window.onscroll = () => {
 
 const blogBox = document.querySelector(".blog-box");
 
-blogContainer.addEventListener("click", () => GoToBlogs());
+blogBox.addEventListener("click", () => GoToBlogs());
 
 function GoToBlogs() {
   window.location.replace(
