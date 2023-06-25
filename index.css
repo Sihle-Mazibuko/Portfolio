@@ -502,7 +502,7 @@ header.sticky {
   gap: 110px;
 }
 
-#blog-box {
+.blog-box {
   width: 350px;
   background-color: wheat;
   border: 1px solid rgba(0, 0, 0, 0.185);
@@ -512,7 +512,7 @@ header.sticky {
   transition: ease 0.45s;
 }
 
-#blog-box:hover {
+.blog-box:hover {
   cursor: pointer;
   will-change: transform;
   transform: perspective(1000px) rotateX(1deg) rotateY(1deg)
@@ -537,7 +537,7 @@ header.sticky {
   font-weight: 500;
 }
 
-#blog-box p {
+.blog-box p {
   font-size: 16px;
   line-height: 24px;
   margin: 5px 0 10px;

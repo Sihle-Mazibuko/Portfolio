@@ -19,16 +19,18 @@ window.onscroll = () => {
 
 const superbalistEssay = document.querySelector("#Superbalist");
 const aiEssay = document.querySelector("#AI");
-const blogBox = document.querySelector("#blog-box");
 
 superbalistEssay.addEventListener("click", () => GoToEssayOne());
 aiEssay.addEventListener("click", () => GoToEssayTWo());
 
-blogBox.addEventListener("click", () => BlogCLick());
+const blogBoxes = document.querySelectorAll(".blog-box");
+blogBoxes.forEach((blogBox) => {
+  blogBox.addEventListener("click", () => BlogClick());
+});
 
-function BlogCLick() {
+function BlogClick() {
   window.location.replace(
-    "https://sihle-mazibuko.github.io/Portfolio/blogsite.html"
+    "https://sihle-mazibuko.github.io/Portfolio/blogpages.html"
   );
 }
 
