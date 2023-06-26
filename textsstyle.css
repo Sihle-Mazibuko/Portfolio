@@ -53,3 +53,10 @@ hgroup {
   font-size: 0.75rem;
   line-height: 30px;
 }
+
+#ai-cite {
+  padding: 0.5rem;
+  font-weight: 100;
+  font-size: 0.75rem;
+  line-height: 30px;
+}
