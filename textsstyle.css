@@ -43,11 +43,6 @@ hgroup {
   text-align: justify;
 }
 
-.paragraphs a {
-  color: gray;
-  text-decoration: underline;
-}
-
 #references h2 {
   text-align: center;
 }
@@ -55,9 +50,4 @@ hgroup {
 .reference {
   padding: 0.5rem;
   font-weight: 100;
-}
-
-.reference a {
-  color: gray;
-  text-decoration: underline;
 }
