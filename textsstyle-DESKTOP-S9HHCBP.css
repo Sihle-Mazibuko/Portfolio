@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  letter-spacing: 0.1rem;
+}
+
+hgroup {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#headings h1 {
+  font-size: 2rem;
+}
+
+#headings h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#headings h3 {
+  font-weight: 100;
+  font-size: 1rem;
+  color: gray;
+}
+
+#headings h2 a {
+  color: rgb(0, 0, 0);
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+
+.paragraphs {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+#references h2 {
+  text-align: center;
+}
+
+.reference cite {
+  padding: 0.5rem;
+  font-weight: 100;
+  font-size: 0.75rem;
+  line-height: 30px;
+}
+
+#ai-cite {
+  padding: 0.5rem;
+  font-weight: 100;
+  font-size: 0.75rem;
+  line-height: 30px;
+}

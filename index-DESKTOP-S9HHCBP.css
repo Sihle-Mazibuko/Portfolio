@@ -387,7 +387,7 @@ header.sticky {
 }
 
 .reference a {
-  color: blue;
+  color: gray;
   text-decoration: underline;
 }
 
@@ -496,7 +496,7 @@ header.sticky {
 }
 
 .blogs-container {
-  display: table-column;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: center;
   gap: 110px;
